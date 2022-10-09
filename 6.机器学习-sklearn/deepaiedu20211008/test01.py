@@ -1,3 +1,4 @@
+# SVC 分类，SVR 回归
 from sklearn.svm import SVC,SVR
 import numpy as np
 import matplotlib.pyplot as plt
