@@ -9,6 +9,7 @@ y=iris.target
 StandardScaler=preprocessing.StandardScaler().fit(x)
 x=StandardScaler.transform(x)
 
+# k最邻近点最优个数
 k_range=range(1,51)
 k_score=[]
 for k in k_range:
