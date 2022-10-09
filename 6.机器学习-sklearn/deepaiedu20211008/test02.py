@@ -12,6 +12,10 @@ scaler=preprocessing.StandardScaler().fit(x_train)
 x_train=scaler.transform(x_train)
 x_test=scaler.transform(x_test)
 
+
+# 随机梯度下降分类器SGD Classifier,快速求解具有损失函数形式的分类算法的分类器。可做线性回归，逻辑回归，线性支持向量机。
+# KNeighborsClassifier K近邻算法
+# LogisticRegression 逻辑回归
 model1=linear_model.SGDClassifier()
 model2=neighbors.KNeighborsClassifier()
 model3=linear_model.LogisticRegression()
