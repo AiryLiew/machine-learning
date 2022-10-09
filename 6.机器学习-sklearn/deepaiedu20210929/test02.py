@@ -12,9 +12,9 @@ x_train,x_test,y_train,y_test=model_selection.train_test_split(x,y,test_size=0.3
 注意：岭回归算法不能处理非线性回归问题
 '''
 reg=linear_model.MultiTaskLasso(0.1)
-reg=linear_model.MultiTaskLassoCV(0.1)
+reg=linear_model.MultiTaskLassoCV(cv = 5,random_state=0)
 reg=linear_model.MultiTaskElasticNet(0.5)
-reg=linear_model.MultiTaskElasticNetCV(0.5)
+reg=linear_model.MultiTaskElasticNetCV(cv = 5)
 
 
 #训练
